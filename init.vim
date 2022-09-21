@@ -16,7 +16,7 @@ filetype indent on      " load filetype-specific indent files
 
 inoremap jk <esc>
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'preservim/nerdtree'
 Plug 'preservim/tagbar'
