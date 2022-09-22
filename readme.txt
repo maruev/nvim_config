@@ -4,9 +4,6 @@ sudo curl -sL https://deb.nodesource.com/setup_16.x | sudo bash - # Добавл
 sudo apt install neovim python3 python3-pip exuberant-ctags git nodejs
 sudo pip3 install jedi
 
-Установить vim-plug:
-sudo sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
 Создать файл конфигурации для nvim:
 cd ~/.config/ && mkdir nvim && cd nvim && nvim init.vim
 
@@ -15,6 +12,9 @@ cd ~/.config/ && mkdir nvim && cd nvim && nvim init.vim
 :w
 :so %
 :PlugInstall
+
+Установить vim-plug:
+sudo sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 Установить lsp server python:
 cd ~/.config/nvim/plugged/coc.nvim && sudo npm install -g yarn && sudo yarn install && sudo yarn build
