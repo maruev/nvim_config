@@ -5,7 +5,7 @@ sudo apt install neovim python3 python3-pip exuberant-ctags git nodejs -y
 sudo pip3 install jedi
 
 Создать файл конфигурации для nvim:
-cd ~/.config/ && mkdir nvim && cd nvim && nvim init.vim
+cd && mkdir .config && cd ~/.config/ && mkdir nvim && cd nvim && nvim init.vim
 
 Вставить текст из гитового init.vim в только что созданный, сохранить
 
