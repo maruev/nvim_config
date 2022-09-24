@@ -1,6 +1,6 @@
 Установить все зависимости:
 sudo apt install curl
-sudo curl -sL https://deb.nodesource.com/setup_16.x | sudo bash - # Добавляем репозиторий с правильной версией nodejs 
+sudo curl -sL https://deb.nodesource.com/setup_16.x | sudo bash - # Добавляем репозиторий с правильной версией nodejs -y
 sudo apt install neovim python3 python3-pip exuberant-ctags git nodejs
 sudo pip3 install jedi
 
